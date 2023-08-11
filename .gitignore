@@ -1,0 +1,14 @@
+# api
+/api/node_modules
+/api/build
+/api/.env
+/api/.env.prod
+
+# client
+/client/node_modules
+/client/build
+/client/.env
+/client/.env.prod
+
+# idea
+/.idea

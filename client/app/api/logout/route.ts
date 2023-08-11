@@ -1,0 +1,15 @@
+import axios from "axios";
+import { NextResponse } from "next/server";
+import {cookies} from "next/headers";
+import getLogoutUser from "@/actions/get-logout-user";
+
+export async function GET() {
+
+    const logout = await getLogoutUser();
+
+    if (!logout) {
+        return NextResponse.error();
+    }
+
+    return NextResponse.json({ message: 'success'}, { status: 200 });
+}
