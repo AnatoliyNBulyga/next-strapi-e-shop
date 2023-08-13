@@ -1,6 +1,4 @@
-import axios from "axios";
 import { NextResponse } from "next/server";
-import {cookies} from "next/headers";
 import getLogoutUser from "@/actions/get-logout-user";
 
 export async function GET() {

@@ -35,17 +35,14 @@ const Summary: React.FC<SummaryProps> = ({
         if (searchParams.get('canceled')) {
             toast.error('Something went wrong.');
         }
-    }, [searchParams, removeAll]);
+    }, [searchParams, removeAll, router]);
 
     const onCheckout = async () => {
         try {
-            console.log('checkout')
             const stripe = await stripePromise;
             const response = await $api.post("/orders", {
                 products
             });
-
-            console.log('response.data ', response.data)
 
             await stripe?.redirectToCheckout({
                 sessionId: response.data.stripeSession.id

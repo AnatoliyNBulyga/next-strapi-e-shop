@@ -42,6 +42,7 @@ const CartItem: React.FC<CartItemProps> = ({
                     src={imageSrc}
                     alt={alt}
                     className="object-cover object-center"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
             </Link>
             <div className="relative ml-4 flex flex-1 flex-col justify-between sm:ml-6">

@@ -1,7 +1,6 @@
 import axios from "axios";
 import { NextResponse } from "next/server";
 import {cookies} from "next/headers";
-import {$api} from "@/utils/http";
 
 export async function POST(
     request: Request,
@@ -13,7 +12,7 @@ export async function POST(
     } = body;
 
     try {
-        const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}auth/local`, {
+        const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL ?? "/"}auth/local`, {
             identifier, password
         })
         cookies().set({

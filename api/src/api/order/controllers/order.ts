@@ -49,7 +49,6 @@ export default factories.createCoreController('api::order.order', ({ strapi }) =
           }
         });
 
-      console.log('session ', session)
       return { stripeSession: session }
 
     } catch (error) {

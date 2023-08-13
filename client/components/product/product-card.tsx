@@ -51,6 +51,7 @@ const ProductCard: React.FC<ProductCard> = ({
                     alt={alt}
                     fill
                     className="aspect-square object-cover rounded-md"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 <div className="opacity-0 group-hover:opacity-100 transition absolute w-full px-6 bottom-5">
                     <div className="flex gap-x-6 justify-center">

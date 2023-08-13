@@ -30,7 +30,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
 
     useEffect(() => {
         router.refresh()
-    }, []);
+    }, [router]);
 
     const toggleOpen = useCallback(() => {
         setIsOpen((value) => !value);

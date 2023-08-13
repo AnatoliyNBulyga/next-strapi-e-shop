@@ -1,7 +1,4 @@
-import {Category} from "@/types";
 import { cookies } from "next/headers";
-
-const URL = `${process.env.NEXT_PUBLIC_API_URL}/auth`;
 
 const getLogoutUser = async (): Promise<any> => {
 
