@@ -8,7 +8,7 @@ import { getSrc } from "@/utils/get-src";
 
 interface GalleryTabProps {
     image: StrapiImageType
-};
+}
 
 const GalleryTab: React.FC<GalleryTabProps> = ({
     image

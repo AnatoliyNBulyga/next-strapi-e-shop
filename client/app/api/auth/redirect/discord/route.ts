@@ -2,7 +2,6 @@ import axios from "axios";
 import {NextRequest} from "next/server";
 import {redirect} from "next/navigation";
 import {cookies} from "next/headers";
-import {RedirectType} from "next/dist/client/components/redirect";
 
 export async function GET(
     request: NextRequest
