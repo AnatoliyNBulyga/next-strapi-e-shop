@@ -21,7 +21,6 @@ export default factories.createCoreController('api::order.order', ({ strapi }) =
             currency: "usd",
             product_data: {
               name: item.name,
-              price: item.price * 100
             },
             unit_amount: item.price * 100,
           },

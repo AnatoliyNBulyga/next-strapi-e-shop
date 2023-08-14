@@ -64,6 +64,11 @@ const RegisterModal = () => {
 
     }
 
+    const onClosePopup = () => {
+        reset();
+        registerModal.onClose();
+    }
+
     const onPasswordToggle = () => {
         if (type === "password") {
             return setType("text");
@@ -79,7 +84,7 @@ const RegisterModal = () => {
     return (
         <Modal
             open={registerModal.isOpen}
-            onClose={registerModal.onClose}
+            onClose={onClosePopup}
         >
             <form onSubmit={handleSubmit(onSubmit)} className="relative p-2 sm:p-6 w-full">
                 <div className="flex flex-col gap-4 mb-6">
