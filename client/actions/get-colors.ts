@@ -10,7 +10,6 @@ const getColors = async (): Promise<Color[]> => {
     const URL = `colors?${query}`;
 
     const res = await $api.get(URL);
-
     return res.data.data;
 }
 

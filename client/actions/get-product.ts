@@ -17,8 +17,7 @@ const getProduct = async (id: string): Promise<Product> => {
     const URL = `products?${query}`;
 
     const res = await $api.get(URL);
-
-    return res.data.data[0];
+    return res.data.data[0]
 }
 
 export default getProduct;

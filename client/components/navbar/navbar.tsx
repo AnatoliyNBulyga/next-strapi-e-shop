@@ -17,15 +17,13 @@ const Navbar = async () => {
     const subCategories = await getSubCategories();
     const currentUser = await getCurrentUser();
 
-    console.log('currentUser ', currentUser);
-
     return (
         <div className="border-b">
             <Container>
                 <div className="relative px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
                     <MobileMenu categories={categories} subcategories={subCategories} />
                     <div className="hidden sm:flex">
-                        <MainNav data={categories} />
+                        <MainNav data={categories ?? []} />
                     </div>
 
                     <Link href="/">
@@ -40,7 +38,7 @@ const Navbar = async () => {
             <div className="bg-gray-100 hidden sm:block">
                 <Container>
                     <div className="px-4 sm:px-6 lg:px-8 flex items-center h-12">
-                        <SubNav subcategories={subCategories} />
+                        <SubNav subcategories={subCategories ?? []} />
                     </div>
                 </Container>
             </div>

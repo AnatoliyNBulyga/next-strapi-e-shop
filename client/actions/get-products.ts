@@ -40,9 +40,10 @@ const getProducts = async ({
 
     const URL = `products?${queryParams}`;
 
-    const res = await $api.get(URL);
+    const res = await $api.get(URL)
 
     return res.data.data;
+
 }
 
 export default getProducts;

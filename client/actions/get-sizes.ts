@@ -9,7 +9,7 @@ const getSizes = async (): Promise<Size[]> => {
 
     const URL = `sizes?${query}`;
 
-    const res = await $api.get(URL);
+    const res = await $api.get(URL)
 
     return res.data.data;
 }

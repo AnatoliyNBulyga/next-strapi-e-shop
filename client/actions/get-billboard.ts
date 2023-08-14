@@ -17,6 +17,7 @@ const getBillboard = async (id: string): Promise<Billboard> => {
 
     const res = await $api.get(URL);
     return res.data.data[0]
+
 }
 
 export default getBillboard;

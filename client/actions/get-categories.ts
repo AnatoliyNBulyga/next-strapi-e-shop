@@ -11,8 +11,7 @@ const getCategories = async (): Promise<Category[]> => {
     const URL = `categories?${query}`;
 
     const res = await $api.get(URL);
-
-    return res.data.data;
+    return res.data.data
 }
 
 export default getCategories;

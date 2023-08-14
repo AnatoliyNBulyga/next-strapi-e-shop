@@ -64,11 +64,6 @@ const RegisterModal = () => {
 
     }
 
-    const onClosePopup = () => {
-        reset();
-        registerModal.onClose();
-    }
-
     const onPasswordToggle = () => {
         if (type === "password") {
             return setType("text");
@@ -80,6 +75,11 @@ const RegisterModal = () => {
         registerModal.onClose();
         loginModal.onOpen();
     }, [loginModal, registerModal]);
+
+    const onClosePopup = () => {
+        reset();
+        registerModal.onClose();
+    }
 
     return (
         <Modal
@@ -152,7 +152,7 @@ const RegisterModal = () => {
                         disabled={isLoading}
                         type="submit"
                     >
-                        Login
+                        Create
                     </Button>
 
                     <div className="flex items-center justify-center gap-2">
@@ -169,15 +169,15 @@ const RegisterModal = () => {
                         />
                         Continue with Google
                     </Button>
-                    <Button
-                        className="bg-white border-2 border-black text-black relative"
-                    >
-                        <AiFillGithub
-                            size={24}
-                            className="absolute left-4 top-3"
-                        />
-                        Continue with Github
-                    </Button>
+                    {/*<Button*/}
+                    {/*    className="bg-white border-2 border-black text-black relative"*/}
+                    {/*>*/}
+                    {/*    <AiFillGithub*/}
+                    {/*        size={24}*/}
+                    {/*        className="absolute left-4 top-3"*/}
+                    {/*    />*/}
+                    {/*    Continue with Github*/}
+                    {/*</Button>*/}
                     <div
                         className="text-neutral-500 text-center mt-4 font-light"
                     >

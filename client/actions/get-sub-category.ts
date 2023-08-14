@@ -20,9 +20,10 @@ const getSubCategory = async (id: string): Promise<SubCategory> => {
 
     const URL = `sub-categories?${query}`;
 
-    const res = await $api.get(URL);
+    const res = await $api.get(URL)
 
     return res.data.data[0];
+
 }
 
 export default getSubCategory;
