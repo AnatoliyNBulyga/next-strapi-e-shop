@@ -1,4 +1,4 @@
-## Full-stack e-commerce app based on Next.js and Strapi
+## Full-stack e-commerce app based on Next.js and Strapi CMS
 
 **Stack:**
 - Next.js
