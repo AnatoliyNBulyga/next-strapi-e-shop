@@ -10,7 +10,7 @@ import useCart from "@/hooks/use-cart";
 
 interface InfoProps {
     data: Product
-};
+}
 
 const Info: React.FC<InfoProps> = ({ data }) => {
 
