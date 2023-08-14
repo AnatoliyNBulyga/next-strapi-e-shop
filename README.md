@@ -11,4 +11,4 @@
 - Stripe
 - Strapi build-in auth api
 
-**You can evaluate the work of the app here:** https://next-modern-blog.vercel.app/
+**You can evaluate the work of the app here:** https://next-strapi-e-shop-client.vercel.app/
