@@ -97,11 +97,11 @@ const Info: React.FC<InfoProps> = ({ data }) => {
             <div className="flex flex-col gap-y-2">
                 <div className="flex items-center gap-2">
                     <span className="font-semibold">Category:</span>
-                    <span>{data?.attributes?.category?.data.attributes?.name}</span>
+                    <span>{data?.attributes?.category?.data?.attributes?.name}</span>
                 </div>
                 <div className="flex items-center gap-2">
                     <span className="font-semibold">Product type:</span>
-                    <span>{data?.attributes?.sub_category?.data.attributes?.name}</span>
+                    <span>{data?.attributes?.sub_category?.data?.attributes?.name}</span>
                 </div>
             </div>
         </div>
