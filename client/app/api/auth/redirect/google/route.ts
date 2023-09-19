@@ -12,7 +12,12 @@ export async function GET(
 
     const provider = 'google';
 
+    console.log('request ', request)
+    console.log('accessToken ', accessToken)
+
     const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}auth/${provider}/callback?access_token=${accessToken}`)
+
+    console.log('res.data ', res.data)
 
     if (res.status !== 200) {
         throw new Error(`Couldn't login to Strapi. Status: ${res.status}`);
